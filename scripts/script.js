@@ -1,4 +1,5 @@
 var pontuacao = 0;
+var numero = 1;
 
 function contador() {
     pontuacao +=1;
@@ -12,6 +13,22 @@ function contador2() {
 function contador3() {
     pontuacao += 20;
     document.getElementById("valor").innerHTML = "Valor: " + pontuacao;
+}
+
+function adicionaTela(){
+    var valor = [document.getElementById("inserir").value];
+
+    var criar = document.createElement("li");
+    var texto = document.createTextNode(valor);
+
+    criar.appendChild(texto);
+    //Colocar texto no input
+    document.getElementById("colocaTexto").appendChild(criar)
+    //Apagar o input
+    document.getElementById("inserir").value = "";
+    document.body.appendChild(criar)
+    
+
 }
 
 function frequencia(){
