@@ -1,6 +1,14 @@
 var pontuacao = 0;
 var numero = 1;
 
+var pessoa = {
+    primeiroNome: "Ilton",
+    idade: 18,
+    escolaridade: "Ensino medio"
+};
+
+console.log(pessoa)
+
 function contador() {
     pontuacao +=1;
     document.getElementById("valor").innerHTML = "Valor: " + pontuacao;
@@ -13,6 +21,13 @@ function contador2() {
 function contador3() {
     pontuacao += 20;
     document.getElementById("valor").innerHTML = "Valor: " + pontuacao;
+}
+
+
+function objetoTeste() {
+
+    document.getElementById("objeto").innerHTML = "Primeiro nome: " + pessoa.primeiroNome +
+    "| Idade: " + pessoa.idade +"| Escoloridade: " + pessoa.escolaridade;
 }
 
 function adicionaTela(){
